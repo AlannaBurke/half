@@ -1,0 +1,13 @@
+name = Text and Editor
+core = 7.x
+package = Features
+dependencies[] = filter
+features[ckeditor_profile][] = Advanced
+features[ckeditor_profile][] = CKEditor Global Profile
+features[ckeditor_profile][] = Full
+features[features_api][] = api:2
+features[filter][] = filtered_html
+features[filter][] = full_html
+features[filter][] = plain_text
+features_exclude[dependencies][ckeditor] = ckeditor
+features_exclude[dependencies][features] = features
