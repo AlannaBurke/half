@@ -352,22 +352,29 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1510281914;
+  $strongarm->value = 1514508932;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'oz6og0';
+  $strongarm->value = 'oz83b7';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1510279120;
+  $strongarm->value = 1514508933;
   $export['ctools_last_cron'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_api_version';
+  $strongarm->value = '7.2';
+  $export['date_api_version'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -413,6 +420,10 @@ system/ajax/*';
       0 => 'node',
       1 => 'nid',
     ),
+    'paragraphs_item' => array(
+      0 => 'paragraphs_item',
+      1 => 'item_id',
+    ),
     'file' => array(
       0 => 'file_managed',
       1 => 'fid',
@@ -446,10 +457,11 @@ system/ajax/*';
   $strongarm->value = array(
     'content_types' => array(
       'node' => '698e0c0823dedde4fdb14c2426ff0474',
-      'field_base' => '6450181a64a3afd513a273d2cdee0527',
-      'field_instance' => '92caedb9b0d762173e559258f084f96b',
+      'field_base' => '34d1054d128836967b19aca9b967017d',
+      'field_instance' => '5142f6a2e8cb09cb39bb8c5f62555857',
       'taxonomy' => '208a4e1298e2704d7e413381ccdde184',
-      'dependencies' => 'a3aaa921dd8a5c633437103f949ebefb',
+      'dependencies' => 'd460ad95759d8bc5faa059eb68bd227d',
+      'paragraphs' => '33bcee2fea53e9f8ff709374f20cd786',
     ),
     'media_images' => array(
       'media_wysiwyg' => '3152d320bcc4d75b77e1727b7cc40c94',
@@ -461,8 +473,8 @@ system/ajax/*';
     ),
     'taxonomy_and_terms' => array(
       'taxonomy' => '208a4e1298e2704d7e413381ccdde184',
-      'dependencies' => 'e4189acd0d448085096fef72e8df3a58',
-      'uuid_term' => '99b5df14e06321449988324d03d2da64',
+      'dependencies' => 'b361df95142df6986f55707fc8762a8c',
+      'uuid_term' => '615efce0c3859e59fc804f2bbcb271dc',
     ),
     'text_and_editor' => array(
       'ckeditor_profile' => '3b1005a3dec60efe607cb0d068e60831',
@@ -475,7 +487,8 @@ system/ajax/*';
       'dependencies' => 'a69a8ca63fca2d2774e23e7077b4b308',
     ),
     'deployment' => array(
-      'dependencies' => 'a87aa109f41299b02b50a252a826e1d2',
+      'dependencies' => 'f04bfae6f8aac379c5dddae9206841d9',
+      'variable' => '44d3aa3d9d0132e92c374a7e6408bd40',
     ),
     'half_views' => array(
       'dependencies' => '242d389f813a156ec0b8c564d5aff0c6',
@@ -536,13 +549,26 @@ system/ajax/*';
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '16',
+          'weight' => '18',
         ),
       ),
       'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__animal'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_paragraphs_item__treatment_plan';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_paragraphs_item__treatment_plan'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -820,20 +846,7 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_recent_modules';
-  $strongarm->value = array(
-    'media_internet' => 1510279470,
-    'media_wysiwyg' => 1510279470,
-    'comment' => 1510280376,
-    'brilliant_gallery' => 1510281745,
-    'content_types' => 1510286251,
-    'deployment' => 1510286251,
-    'media_images' => 1510286251,
-    'menus' => 1510286251,
-    'taxonomy_and_terms' => 1510286251,
-    'text_and_editor' => 1510286251,
-    'users_and_roles' => 1510286251,
-    'half_views' => 1510286251,
-  );
+  $strongarm->value = array();
   $export['module_filter_recent_modules'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -847,7 +860,7 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1510281441';
+  $strongarm->value = '1510353518';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1086,7 +1099,7 @@ system/ajax/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1510285621;
+  $strongarm->value = 1514508937;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

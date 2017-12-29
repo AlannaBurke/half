@@ -120,7 +120,7 @@ function content_types_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_age',
-    'label' => 'Age',
+    'label' => 'Intake Age',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -362,7 +362,7 @@ function content_types_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_breed',
-    'label' => 'breed',
+    'label' => 'Breed',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -372,7 +372,7 @@ function content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 8,
+      'weight' => 11,
     ),
   );
 
@@ -421,7 +421,7 @@ function content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 10,
     ),
   );
 
@@ -470,7 +470,74 @@ function content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'node-animal-field_intake_date'.
+  $field_instances['node-animal-field_intake_date'] = array(
+    'bundle' => 'animal',
+    'deleted' => 0,
+    'description' => 'The date the animal was taken into our care',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 15,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_intake_date',
+    'label' => 'Intake Date',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 6,
     ),
   );
 
@@ -530,7 +597,7 @@ function content_types_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 14,
+      'weight' => 16,
     ),
   );
 
@@ -587,7 +654,7 @@ function content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 7,
     ),
   );
 
@@ -640,7 +707,7 @@ function content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 11,
+      'weight' => 14,
     ),
   );
 
@@ -694,7 +761,7 @@ function content_types_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 15,
+      'weight' => 17,
     ),
   );
 
@@ -754,7 +821,7 @@ function content_types_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 10,
+      'weight' => 13,
     ),
   );
 
@@ -803,7 +870,7 @@ function content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 9,
     ),
   );
 
@@ -852,7 +919,68 @@ function content_types_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 9,
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-animal-field_treatment_plan'.
+  $field_instances['node-animal-field_treatment_plan'] = array(
+    'bundle' => 'animal',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Add a treatment plan for this animal. You can add updates with a date, condition update, and current plan. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 16,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_treatment_plan',
+    'label' => 'Treatment Plan',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'treatment_plan' => 'treatment_plan',
+      ),
+      'bundle_weights' => array(
+        'treatment_plan' => 2,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Treatment Plan Update',
+      'title_multiple' => 'Treatment Plan Updates',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_hidden',
+      'weight' => 8,
     ),
   );
 
@@ -1037,19 +1165,161 @@ function content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'paragraphs_item-treatment_plan-field_current_treatment_plan'.
+  $field_instances['paragraphs_item-treatment_plan-field_current_treatment_plan'] = array(
+    'bundle' => 'treatment_plan',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_current_treatment_plan',
+    'label' => 'Current Treatment Plan',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 8,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-treatment_plan-field_date'.
+  $field_instances['paragraphs_item-treatment_plan-field_date'] = array(
+    'bundle' => 'treatment_plan',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_date',
+    'label' => 'Date',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 30,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'text_parts' => array(),
+        'year_range' => '-1:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-treatment_plan-field_update'.
+  $field_instances['paragraphs_item-treatment_plan-field_update'] = array(
+    'bundle' => 'treatment_plan',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_update',
+    'label' => 'Condition Update',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 8,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('About');
-  t('Age');
+  t('Add a treatment plan for this animal. You can add updates with a date, condition update, and current plan. ');
   t('Animal Status');
   t('Animal Type');
   t('Body');
+  t('Breed');
   t('Check this box to NOT display this animal on the site. By default, all adoptable and adopted animals will be displayed. ');
   t('Color');
+  t('Condition Update');
+  t('Current Treatment Plan');
+  t('Date');
   t('Enter a comma-separated list of words to describe your content.');
   t('Good With');
   t('Image');
   t('Information about the animal/bio to be displayed to adopters when animal is adoptable.');
+  t('Intake Age');
+  t('Intake Date');
   t('Internal Only');
   t('Medical conditions');
   t('Must be adopted with');
@@ -1058,10 +1328,11 @@ function content_types_field_default_field_instances() {
   t('Sex');
   t('Size');
   t('Tags');
+  t('The date the animal was taken into our care');
+  t('Treatment Plan');
   t('Upload an image to go with this article.');
   t('Upload any files related to this animal. You can choose whether or not each file will be displayed (ie, uploading images of medical conditions to keep track). Videos are also permitted. ');
   t('Where is this animal from? Rescue/shelter/surrender/found/etc');
-  t('breed');
 
   return $field_instances;
 }

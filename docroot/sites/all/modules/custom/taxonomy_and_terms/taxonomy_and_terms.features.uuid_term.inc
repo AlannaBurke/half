@@ -36,7 +36,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'pink-eyed white',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 1,
+    'weight' => 0,
     'uuid' => '04785676-fb98-439c-9734-271d0f92edf5',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -58,7 +58,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'agouti',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 14,
+    'weight' => 0,
     'uuid' => '1451623e-4d49-410e-9a30-4f8789dc7907',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -69,9 +69,31 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'Tricolour',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 13,
+    'weight' => 0,
     'uuid' => '150240ee-5691-479e-ba80-944b84572b20',
     'vocabulary_machine_name' => 'coat_color',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
+    'name' => 'reptile',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 10,
+    'uuid' => '15ffef2c-d021-4e45-9bd6-192af650f386',
+    'vocabulary_machine_name' => 'animal_types',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
+    'name' => 'sugar glider',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 8,
+    'uuid' => '168436c3-a5a1-4a2c-a6f9-59fff01bbdac',
+    'vocabulary_machine_name' => 'animal_types',
     'path' => array(
       'pathauto' => 1,
     ),
@@ -91,7 +113,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'Himalayan - black',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 9,
+    'weight' => 0,
     'uuid' => '1acfae18-9e23-4ae0-943c-fa0b3b8a239c',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -102,9 +124,20 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'Himalayan - chocolate',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 10,
+    'weight' => 0,
     'uuid' => '24f46462-fcaf-47e0-9743-900e0864be2a',
     'vocabulary_machine_name' => 'coat_color',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
+    'name' => 'bird',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 9,
+    'uuid' => '2b420748-8280-4b7c-b9e7-1fe5f58f84a9',
+    'vocabulary_machine_name' => 'animal_types',
     'path' => array(
       'pathauto' => 1,
     ),
@@ -135,7 +168,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'tortoise and white/calico',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 11,
+    'weight' => 0,
     'uuid' => '44056446-5507-417b-ba2f-660da5f25183',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -154,10 +187,21 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'exotic',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 11,
+    'uuid' => '4fc25e2f-29ae-4509-a338-0f698248ab9d',
+    'vocabulary_machine_name' => 'animal_types',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
     'name' => 'gerbil',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 6,
     'uuid' => '5a839cb9-7b9b-4e70-a36e-c0f9ba411077',
     'vocabulary_machine_name' => 'animal_types',
     'path' => array(
@@ -179,7 +223,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'gray',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 6,
+    'weight' => 0,
     'uuid' => '5cd4eb14-9131-4443-bad0-9b5145d68bb9',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -190,7 +234,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'rat',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '5dc8356f-574a-4bd1-b60a-21edd0dc2632',
     'vocabulary_machine_name' => 'animal_types',
     'path' => array(
@@ -201,7 +245,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'adoptable',
     'description' => 'Use this to label an animal in our care who is ready to be adopted.',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => '698aea96-43f4-44d4-a857-e5719fd9df6e',
     'vocabulary_machine_name' => 'animal_status',
     'path' => array(
@@ -223,7 +267,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'beige',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 2,
+    'weight' => 0,
     'uuid' => '6c47f4de-54f4-47cd-b1fc-578cc2aa8549',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -242,10 +286,21 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'ferrets',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 7,
+    'uuid' => '7a885847-ee35-44d6-ab43-f1d7a3528914',
+    'vocabulary_machine_name' => 'animal_types',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
     'name' => 'hamster',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 3,
     'uuid' => '875dd9ba-9ea6-4d79-b1d7-44b053b7ff6f',
     'vocabulary_machine_name' => 'animal_types',
     'path' => array(
@@ -256,7 +311,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'Tortoiseshell',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 12,
+    'weight' => 0,
     'uuid' => '8b190165-2c59-4499-a13b-15bf980dc8eb',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -267,9 +322,20 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'black',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 7,
+    'weight' => 0,
     'uuid' => '98fe2af2-c845-4358-8602-ac82318edafe',
     'vocabulary_machine_name' => 'coat_color',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
+    'name' => 'rainbow bridge',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 5,
+    'uuid' => '9930136a-58f7-4339-8aae-30fe7c22372f',
+    'vocabulary_machine_name' => 'animal_status',
     'path' => array(
       'pathauto' => 1,
     ),
@@ -278,7 +344,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'mouse',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 4,
     'uuid' => '9b71a437-713d-48d6-b9f6-55a6c64760d9',
     'vocabulary_machine_name' => 'animal_types',
     'path' => array(
@@ -289,7 +355,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'black and white',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 8,
+    'weight' => 0,
     'uuid' => 'a700bc56-c1ef-4b0d-9e5c-b48112a240f6',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -322,7 +388,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'rabbit',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => 'b060962d-92f6-4ca0-b4bb-a59f6812b37f',
     'vocabulary_machine_name' => 'animal_types',
     'path' => array(
@@ -333,8 +399,19 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'foster care',
     'description' => 'Use this to label an animal who is in foster care but not yet ready to be adopted. ',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => 'b4d939a1-5119-4697-9c60-aa6ddb3522ef',
+    'vocabulary_machine_name' => 'animal_status',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
+    'name' => 'sanctuary',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 4,
+    'uuid' => 'b72e2100-057f-4cd2-9576-8d9b3183d650',
     'vocabulary_machine_name' => 'animal_status',
     'path' => array(
       'pathauto' => 1,
@@ -344,9 +421,20 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'brown',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 5,
+    'weight' => 0,
     'uuid' => 'b842f790-83c2-4df1-bc4e-7ee267c81273',
     'vocabulary_machine_name' => 'coat_color',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+  );
+  $terms[] = array(
+    'name' => 'chinchilla',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 5,
+    'uuid' => 'bcb8bcde-2c89-4109-abce-6ae84e4aa770',
+    'vocabulary_machine_name' => 'animal_types',
     'path' => array(
       'pathauto' => 1,
     ),
@@ -366,7 +454,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'cream',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 3,
+    'weight' => 0,
     'uuid' => 'c948e89f-137d-44d8-927f-8bb0b8080e79',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(
@@ -388,7 +476,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'adopted',
     'description' => 'Use this to label an animal who has been adopted so that we can track success stories!',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 3,
     'uuid' => 'db0f0902-c22a-4534-8c2a-032f90b0c48f',
     'vocabulary_machine_name' => 'animal_status',
     'path' => array(
@@ -399,7 +487,7 @@ function taxonomy_and_terms_uuid_features_default_terms() {
     'name' => 'tan',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 4,
+    'weight' => 0,
     'uuid' => 'e3458db6-0a99-46a9-a2fd-36c81f4b7de9',
     'vocabulary_machine_name' => 'coat_color',
     'path' => array(

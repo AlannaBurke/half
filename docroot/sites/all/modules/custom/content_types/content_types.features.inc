@@ -5,6 +5,15 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function content_types_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function content_types_node_info() {
@@ -35,5 +44,19 @@ function content_types_node_info() {
     ),
   );
   drupal_alter('node_info', $items);
+  return $items;
+}
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function content_types_paragraphs_info() {
+  $items = array(
+    'treatment_plan' => array(
+      'name' => 'Treatment Plan',
+      'bundle' => 'treatment_plan',
+      'locked' => '1',
+    ),
+  );
   return $items;
 }
